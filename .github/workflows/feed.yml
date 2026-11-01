@@ -1,0 +1,56 @@
+name: Update feed
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build feed
+        run: python3 meedia_rss.py --self-url "https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/meedia.xml"
+
+      # lastBuildDate changes on every run, so state.json is what shows
+      # whether anything really changed.
+      - name: Save state
+        id: state
+        run: |
+          if git diff --quiet state.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state.json
+            git commit -m "Update article cache"
+            git push
+          fi
+
+      - name: Prepare site
+        if: steps.state.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: mkdir _site && cp meedia.xml _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.state.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          path: _site
+
+      - uses: actions/deploy-pages@v4
+        id: deploy
+        if: steps.state.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
