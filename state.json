@@ -1,5 +1,65 @@
 {
  "articles": {
+  "25438": {
+   "url": "https://meedia.de/news/beitrag/25438-julia-schleunung-out-of-home-hat-jetzt-die-chance-durch-die-decke-zu-gehen.html",
+   "title": "Julia Schleunung: „Out of Home hat jetzt die Chance, durch die Decke zu gehen“",
+   "description": "It Works will den Rückenwind für Digital Out of Home nutzen und sich breiter aufstellen. Geschäftsführerin Julia Schleunung spricht über integrierte Planung, die Rolle von KI, die Zusammenarbeit mit Kreativagenturen und eine Branche, die ihre Kräfte stärker bündeln muss.",
+   "author": "Frank Puscher",
+   "published": "2026-11-17T16:36:00+01:00",
+   "image": "https://meedia-cloud.com/news_list_home/uploads/news/Julia_Schleunung_1080x810_cr_itworks.jpg",
+   "keywords": [
+    "Julia Schleunung",
+    "It Works",
+    "Digital Out of Home",
+    "DOOH",
+    "Out of Home Werbung",
+    "Außenwerbung",
+    "Programmatic DOOH",
+    "Retail Media",
+    "Public Media",
+    "Mediaagentur",
+    "Locatrics",
+    "DSP",
+    "KI in der Außenwerbung",
+    "Dynamic Creative Optimization",
+    "DCO",
+    "Werbewirkung",
+    "Reichweitenmessung",
+    "DOOH-Kampagnen",
+    "Kreativagenturen",
+    "Zukunft der Außenwerbung",
+    "kress",
+    "kress pro",
+    "medien",
+    "Mediendienst"
+   ]
+  },
+  "25462": {
+   "url": "https://meedia.de/news/beitrag/25462-messmer-hersteller-otg-neuer-chef-ingo-wiltfang-leitet-auch-marketing.html",
+   "title": "Meßmer-Hersteller OTG: Neuer Chef Ingo Wiltfang leitet auch Marketing",
+   "description": "Ab 1. Januar 2027 will die Ostfriesische Tee Gesellschaft (OTG) Vertrieb, Marketing sowie Innovation und Entwicklung enger verzahnen. Die Folge: Die Geschäftsführung wird von drei auf zwei Personen verkleinert. Damit steigt auch Ingo Wiltfang zum Sprecher der obersten Leitungsebene auf und verantwortet u.a. Marketing. Aus dem Gremium scheidet Annemarie Leniger aus, die bisher in der Geschäftsführung für Marketing zuständig war.",
+   "author": "Reiner Kepler",
+   "published": "2026-11-17T16:07:00+01:00",
+   "image": "https://meedia-cloud.com/news_list_home/uploads/news/OTG-Ostfriesische_Tee_Gesellschaft_Ingo_Wiltfang_cr-OTG.jpeg",
+   "keywords": [
+    "Meßmer-Hersteller",
+    "Meßmer",
+    "Milford",
+    "OTG",
+    "neuer Chef",
+    "Ingo Wiltfang",
+    "Marketingleitung",
+    "Marketing",
+    "Tee",
+    "Teemarke",
+    "Annemarie Leniger",
+    "Geschäftsführung",
+    "kress",
+    "kress pro",
+    "medien",
+    "Mediendienst"
+   ]
+  },
   "25460": {
    "url": "https://meedia.de/news/beitrag/25460-afd-und-bsw-blockieren-digitalen-medienstaatsvertrag.html",
    "title": "AfD und BSW blockieren Digitalen Medienstaatsvertrag",
@@ -5089,5 +5149,5 @@
    "skip": true
   }
  },
- "sitemap_checked": "2026-11-16T22:10:23.414943+00:00"
+ "sitemap_checked": "2026-11-17T22:55:36.196525+00:00"
 }
